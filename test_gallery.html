@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+<h1>Test Gallery</h1>
+
+<script>
+	function photoOne() {
+		document.getElementById('photo_1').style.display='block';
+		document.getElementById('photo_2').style.display='none';
+		document.getElementById('photo_3').style.display='none';
+	}
+	function photoTwo() {
+		document.getElementById('photo_1').style.display='none';
+		document.getElementById('photo_2').style.display='block';
+		document.getElementById('photo_3').style.display='none';
+	}
+	function photoThree() {
+		document.getElementById('photo_1').style.display='none';
+		document.getElementById('photo_2').style.display='none';
+		document.getElementById('photo_3').style.display='block';
+	}
+</script>
+
+
+<div id = "photo_one"><a href="javascript:photoOne()">Photo One</a></div>
+<div id = "photo_two"><a href="javascript:photoTwo()">Photo Two</a></div>
+<div id = "photo_three"><a href="javascript:photoThree()">Photo Three</a></div>
+
+<div id = 'photo_1'> <img src="1.jpg"></div>
+<div id = 'photo_2'> <img src="2.jpg"></div>
+<div id = 'photo_3'> <img src="3.jpg"></div>
+
+</body>
+
+</html>

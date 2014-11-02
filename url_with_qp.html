@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+var qp = window.location.href;
+var parts = [];
+parts = qp.split('?');
+qp = '?' + parts[1]
+</script>
+
+<script type="text/javascript">
+	__reach_config = {
+	  pid: '000000000000000000000000',
+	  title: 'Your Face',
+	  url: 'http://qatesting.com' + qp,
+	  date: '09/29/2014 00:00 -0400',
+	  authors: ['Author 1'],
+	  channels: ['Channel 1'],
+	  tags: ['Tag 1','Tag 2'],
+	  iframe: true,
+	  ignore_errors: false,
+	};
+	(function(){
+	  var s = document.createElement('script');
+	  s.async = true;
+	  s.type = 'text/javascript';
+	  s.src = document.location.protocol + '//d8rk54i4mohrb.cloudfront.net/js/reach.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+	})();
+</script>
+
+</head>
+
+<body>
+<h1>URL With Query Params</h1>
+
+</body>
+
+</html>
